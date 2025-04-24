@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className="footer-container">
-      <FaRegCopyright /> SG @ {new Date().getFullYear()} | All rights reserved.
+      <FaRegCopyright /> SG {new Date().getFullYear()} | All rights reserved.
     </div>
   )
 }
