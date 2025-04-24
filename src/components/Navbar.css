@@ -1,0 +1,124 @@
+.navbar-container {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.navbar-image {
+    height: 4rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.navbar-links {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.navbar-links:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.menu-button {
+    display: none;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+}
+
+.show-button-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10;
+    animation: slideDown 0.4s ease forwards;
+    top: 90px;
+
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.button-menu-link {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.button-menu-link:hover {
+    background-color: #f0f0f0;
+}
+
+/* Add borders to all except the last */
+.button-menu-link:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.cart-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 1px 5px;
+    min-width: 16px;
+    text-align: center;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-count-dropdown {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 1px 5px;
+    min-width: 16px;
+    text-align: center;
+  }
